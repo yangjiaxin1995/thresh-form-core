@@ -1,10 +1,10 @@
-import React, { Component, useEffect } from "react";
+import React, { Component } from 'react';
 // import Form, { Field } from "rc-field-form";
-import Form, { Field } from "../components/my-rc-field-form";
-import Input from "../components/Input";
+import Form, { Field } from '../components/my-rc-field-form';
+import Input from '../components/Input';
 
-const nameRules = { required: true, message: "请输入姓名！" };
-const passworRules = { required: true, message: "请输入密码！" };
+const nameRules = { required: true, message: '请输入姓名！' };
+const passworRules = { required: true, message: '请输入密码！' };
 
 // export default function MyRCFieldForm(props) {
 //   const [form] = Form.useForm();
@@ -43,19 +43,19 @@ export default class MyRCFieldForm extends Component {
   formRef = React.createRef();
 
   componentDidMount() {
-    console.log("form", this.formRef.current);
-    this.formRef.current.setFieldsValue({ username: "default" });
+    console.log('form', this.formRef.current);
+    this.formRef.current.setFieldsValue({ username: 'default' });
   }
 
   onFinish = (val) => {
-    console.log("onFinish", val);
+    console.log('onFinish', val);
   };
 
   // 表单校验失败执行
   onFinishFailed = (val) => {
-    console.log("onFinishFailed", val);
+    console.log('onFinishFailed', val);
   };
-  
+
   render() {
     return (
       <div>

@@ -1,11 +1,11 @@
-import AntdFormPage from "./pages/AntdFormPage";
-// import MyRCFieldForm from "./pages/MyRCFieldForm";
+// import AntdFormPage from "./pages/AntdFormPage";
+import MyRCFieldFormPage from './pages/MyRCFieldFormPage';
 
 export default function App(props) {
   return (
     <div>
-      <AntdFormPage />
-      {/* <MyRCFieldForm /> */}
+      {/* <AntdFormPage /> */}
+      <MyRCFieldFormPage />
     </div>
   );
 }
