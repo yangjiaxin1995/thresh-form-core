@@ -1,3 +1,3 @@
 ## thresh-form-core
 
-实现一个个人简版rc-field-form。
+实现一个简版rc-field-form。
